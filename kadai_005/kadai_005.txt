@@ -1,0 +1,49 @@
+PS C:\Users\kohar\Desktop\practice> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\kohar\Desktop\practice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/05/18     16:58                git_challenge
+
+
+PS C:\Users\kohar\Desktop\practice> cd git_challenge
+PS C:\Users\kohar\Desktop\practice\git_challenge> git init                
+Initialized empty Git repository in C:/Users/kohar/Desktop/practice/git_challenge/.git/
+PS C:\Users\kohar\Desktop\practice\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\kohar\Desktop\practice\git_challenge> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\kohar\Desktop\practice\git_challenge> git add .
+PS C:\Users\kohar\Desktop\practice\git_challenge> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.txt
+
+PS C:\Users\kohar\Desktop\practice\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) d648c55] hello_world.txt繧定ｿｽ蜉
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\kohar\Desktop\practice\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\kohar\Desktop\practice\git_challenge> git add hello_world.txt
+PS C:\Users\kohar\Desktop\practice\git_challenge> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello_world.txt
+
+PS C:\Users\kohar\Desktop\practice\git_challenge> git commit -m "日本語訳を追記"              
+[main aa16607] 譌･譛ｬ隱櫁ｨｳ繧定ｿｽ險
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\kohar\Desktop\practice\git_challenge> git log --oneline
+aa16607 (HEAD -> main) 日本語訳を追記
+d648c55 hello_world.txtを追加
+PS C:\Users\kohar\Desktop\practice\git_challenge> 
